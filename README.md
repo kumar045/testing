@@ -105,7 +105,7 @@ python3 --version
 
 9.  In the explorer, go to the `machinetranslation` directory and create a new file called `translator.py`. Enter the following line of code.
 
-    ```py
+    ```
    from deep_translator import MyMemoryTranslator
     ```
 
