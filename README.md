@@ -138,8 +138,8 @@ python3 --version
 
 1. Create a new file called `tests.py` in the `machinetranslation` directory.
 2. Write at least 2 tests in `tests.py` for each method
-3. Test for the translation of the world 'Hello' and 'Bonjour'.
-4. Test for the translation of the world 'Bonjour' and 'Hello'.
+3. Test for the translation of the word 'Hello' and 'Bonjour'.
+4. Test for the translation of the word 'Bonjour' and 'Hello'.
 5. Take a screenshot of your unit tests and save it as a .jpg or .png with the filename `translation_unittests`.
 
 ::page{title="__Task 3:__ Check your code against python coding standards"}
