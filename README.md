@@ -10,7 +10,7 @@ Estimated time needed: **60** minutes
 
 In this assignment you will:
 
--   Use Watson APIs to create functions.
+-   Use the deep_translator python package for the translation.
 -   Create a function that translates English to French.
 -   Create a function that translates French to English.
 -   Run coding standards check against the functions above.
@@ -48,10 +48,6 @@ git push
 ```
 
 </details>
-
-## Provision Watson Translation Service
-
-* Before you start, ensure you have provisioned an instance of the Watson Language Translator service and have API information available.
 
 ## __Task1:__ Write a function that translates English text to French in translator.py
 
@@ -99,44 +95,24 @@ python3 --version
 
 >Note: It should be `Python 3.8.0`.
 
-8. Install the packages that you will be using in this code, namely `ibm_watson` , `python-dotenv`and `Flask`.
+8. Install the packages that you will be using in this code, namely `deep_translator` and `Flask`.
 
     ```
-    python3 -m pip install python-dotenv
-    python3 -m pip install ibm_watson
+    python3 -m pip install deep_translator
     python3 -m pip install Flask
     ```
 
 
-9. Create a file `.env` under the `machinetranslation` directory, which maps the apikey and url of the Language Translator Service that you created in the IBM Cloud.
-
-    <img src="images/environmentfile.png" style="margin-top:10px;margin-bottom:10px;"/>
-
-    ><details><summary>👉 Click here to see where the credentials can be copied from</summary><img src="images/languagetranslator_credentials.png" widht="75%" style="border: solid 1px grey"/>
-    </details>
-
-10.  In the explorer, go to the `machinetranslation` directory and create a new file called `translator.py`. Enter the following lines of code.
+9.  In the explorer, go to the `machinetranslation` directory and create a new file called `translator.py`. Enter the following line of code.
 
     ```py
-    import json
-    from ibm_watson import LanguageTranslatorV3
-    from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
-    import os
-    from dotenv import load_dotenv
-
-    load_dotenv()
-
-    apikey = os.environ['apikey']
-    url = os.environ['url']
+   from deep_translator import MyMemoryTranslator
     ```
 
 
-11. Add code to create an instance of the IBM Watson Language translator in `translator.py`.
-    > Hint : You may refer to the IBM Watson Language Translation API documents <a href="https://cloud.ibm.com/apidocs/language-translator?code=python">here.</a>
+>📷 Take a screenshot of your import statement and save it as a .jpg or .png with the filename `import_translator`.  You will be prompted to upload the screenshot in the Peer Assignement that follows.
 
->📷 Take a screenshot of your functions and save it as a .jpg or .png with the filename `translator_instance`.  You will be prompted to upload the screenshot in the Peer Assignement that follows.
-
-12. Add function **englishToFrench** which takes in the `englishText` as a string argument, in `translator.py`. Use the instance of the Language Translator you created previously, to translate the text input in English to French and return the French text.
+12. Add function **englishToFrench** which takes in the `englishText` as a string argument, in `translator.py`. Use the instance of the MyMemory Translator you imported previously, to translate the text input in English to French and return the French text.
 
     ```python
     def englishToFrench(englishText):
@@ -147,7 +123,7 @@ python3 --version
 
 📷 Take a screenshot of your functions and save it as a .jpg or .png with the filename `e2f_translator_function`.  You will be prompted to upload the screenshot in the Peer Assignement that follows.
 
-13. Add function **frenchToEnglish** which takes in the `frenchText` as a string argument, in `translator.py`. Use the instance of the Language Translator you created previously, to translate the text input in French to English and return the English text.
+13. Add function **frenchToEnglish** which takes in the `frenchText` as a string argument, in `translator.py`. Use the instance of the Memory Translator you imported previously, to translate the text input in French to English and return the English text.
 
     ```python
     def frenchToEnglish(frenchText):
@@ -162,11 +138,9 @@ python3 --version
 
 1. Create a new file called `tests.py` in the `machinetranslation` directory.
 2. Write at least 2 tests in `tests.py` for each method
-3. Test for null input for `frenchToEnglish`
-4. Test for null input for `englishToFrench`.
-5. Test for the translation of the world 'Hello' and 'Bonjour'.
-6. Test for the translation of the world 'Bonjour' and 'Hello'.
-7. Take a screenshot of your unit tests and save it as a .jpg or .png with the filename `translation_unittests`.
+3. Test for the translation of the world 'Hello' and 'Bonjour'.
+4. Test for the translation of the world 'Bonjour' and 'Hello'.
+5. Take a screenshot of your unit tests and save it as a .jpg or .png with the filename `translation_unittests`.
 
 ::page{title="__Task 3:__ Check your code against python coding standards"}
 
@@ -493,6 +467,7 @@ Ramesh Sannareddy
 | 2022-10-21 | 2.2 | Ratima | Updated Skill Network Logo screenshot|
 | 2022-12-16 | 2.3 | Ratima | Updated instruction|
 | 2023-03-21 | 2.4 | Ratima | Updated Task 8|
+| 2023-06-01 | 2.5 | Shivam | Updated Task 8|
 
  Copyright © 2020 IBM Corporation. All rights reserved.
 
