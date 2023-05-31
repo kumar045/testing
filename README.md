@@ -467,7 +467,7 @@ Ramesh Sannareddy
 | 2022-10-21 | 2.2 | Ratima | Updated Skill Network Logo screenshot|
 | 2022-12-16 | 2.3 | Ratima | Updated instruction|
 | 2023-03-21 | 2.4 | Ratima | Updated Task 8|
-| 2023-06-01 | 2.5 | Shivam | Updated Task 8|
+| 2023-06-01 | 2.5 | Shivam | Updated Translator|
 
  Copyright © 2020 IBM Corporation. All rights reserved.
 
