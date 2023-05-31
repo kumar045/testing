@@ -112,7 +112,7 @@ python3 --version
 
 >📷 Take a screenshot of your import statement and save it as a .jpg or .png with the filename `import_translator`.  You will be prompted to upload the screenshot in the Peer Assignement that follows.
 
-12. Add function **englishToFrench** which takes in the `englishText` as a string argument, in `translator.py`. Use the instance of the MyMemory Translator you imported previously, to translate the text input in English to French and return the French text.
+10. Add function **englishToFrench** which takes in the `englishText` as a string argument, in `translator.py`. Use the instance of the MyMemory Translator you imported previously, to translate the text input in English to French and return the French text.
 
     ```python
     def englishToFrench(englishText):
@@ -123,7 +123,7 @@ python3 --version
 
 📷 Take a screenshot of your functions and save it as a .jpg or .png with the filename `e2f_translator_function`.  You will be prompted to upload the screenshot in the Peer Assignement that follows.
 
-13. Add function **frenchToEnglish** which takes in the `frenchText` as a string argument, in `translator.py`. Use the instance of the MyMemory Translator you imported previously, to translate the text input in French to English and return the English text.
+11. Add function **frenchToEnglish** which takes in the `frenchText` as a string argument, in `translator.py`. Use the instance of the MyMemory Translator you imported previously, to translate the text input in French to English and return the English text.
 
     ```python
     def frenchToEnglish(frenchText):
